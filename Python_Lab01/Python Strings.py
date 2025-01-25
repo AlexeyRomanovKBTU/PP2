@@ -1,108 +1,155 @@
+###################################
 # Python Strings
-print("Hello")
-print('Hello')
+###################################
 
-print("It's alright")
-print("He is called 'Johnny'")
-print('He is called "Johnny"')
+#----------------------------------
+#Exercise 1
+# What will be the result of the following code:
+x = 'Welcome'
+print(x[3])
+# c
 
-a = "Hello"
-print(a)
+#----------------------------------
+#Exercise 2
+# Use the len function to print the length of the string.
+x = "Hello World"
+print(len(x))
+# print(len(x))
 
-a = """Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua."""
-print(a)
+#----------------------------------
+#Exercise 3
+# Get the first character of the string txt.
+txt = "Hello World"
+x = txt[0]
+# x = txt[0]
 
-a = '''Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua.'''
-print(a)
+#----------------------------------
+#Exercise 4
+# Insert the correct keyword to check if the word 'free' is present in the text:
 
-a = "Hello, World!"
-print(a[1])
+txt = 'The best things in life are free!'
+if 'free' in txt:
+  print('Yes, free is present in the text.')
+# if 'free' in txt:
 
-for x in "banana":
-  print(x)
-
-a = "Hello, World!"
-print(len(a))
-
-txt = "The best things in life are free!"
-print("free" in txt)
-
-txt = "The best things in life are free!"
-if "free" in txt:
-  print("Yes, 'free' is present.")
-
-txt = "The best things in life are free!"
-print("expensive" not in txt)
-
-txt = "The best things in life are free!"
-if "expensive" not in txt:
-  print("No, 'expensive' is NOT present.")
+#----------------------------------
 
 
+###################################
 # Slicing Strings
-b = "Hello, World!"
-print(b[2:5])
+###################################
 
-b = "Hello, World!"
-print(b[:5])
+#----------------------------------
+#Exercise 1
+# What will be the result of the following code:
+x = 'Welcome'
+print(x[3:5])
+# co
 
-b = "Hello, World!"
-print(b[2:])
+#----------------------------------
+#Exercise 2
+# Get the characters from index 2 to index 4 (llo).
+txt = "Hello World"
+x = txt[2:5]
+# x = txt[2:5]
 
-b = "Hello, World!"
-print(b[-5:-2])
+#----------------------------------
+#Exercise 3
+# What will be the result of the following code:
+x = 'Welcome'
+print(x[3:])
+# come
 
+#----------------------------------
 
+###################################
 # Modify Strings
-a = "Hello, World!"
-print(a.upper())
+###################################
 
-a = "Hello, World!"
-print(a.lower())
+#----------------------------------
+#Exercise 1
+# What is a correct syntax to print a string in upper case letters?
+# 'Welcome'.upper()
 
-a = " Hello, World! "
-print(a.strip()) # returns "Hello, World!"
+#----------------------------------
+#Exercise 2
+# Return the string without any whitespace at the beginning or the end.
+txt = " Hello World "
+x = txt.strip()
+# x = txt.strip()
 
-a = "Hello, World!"
-print(a.replace("H", "J"))
+#----------------------------------
+#Exercise 3
+# Convert the value of txt to upper case.
+txt = "Hello World"
+txt = txt.upper()
+# txt = txt.upper()
 
-a = "Hello, World!"
-print(a.split(",")) # returns ['Hello', ' World!']
+#----------------------------------
+#Exercise 4
+# Convert the value of txt to lower case.
+txt = "Hello World"
+txt = txt.lower()
+# txt = txt.lower()
 
+#----------------------------------
+#Exercise 5
+# Replace the character H with a J.
+txt = "Hello World"
+txt = txt.replace("H", "J")
+# txt = txt.replace("H", "J")
+
+#----------------------------------
+
+###################################
 # String Concatenation
-a = "Hello"
-b = "World"
-c = a + b
-print(c)
+###################################
 
-a = "Hello"
-b = "World"
-c = a + " " + b
-print(c)
+#----------------------------------
+#Exercise 1
+# What is a correct syntax to merge variable x and y into variable z?
+# z = x + y
 
+#----------------------------------
+#Exercise 2
+# What will be the result of the following code:
+x = 'Welcome'
+y = 'Coders'
+print(x + y)
+# WelocomeCoders
 
-# String Format
+#----------------------------------
+#Exercise 3
+# Consider this code:
+a = 'Join'
+b = 'the'
+c = 'party'
+# What is a correct syntax to print 'Join the party'?
+# print(a + ' ' + b + ' ' + c)
+
+#----------------------------------
+
+###################################
+# Format Strings
+###################################
+
+#----------------------------------
+#Exercise 1
+# If x = 9, what is a correct syntax to print 'The price is 9.00 dollars'?
+# print(f'The price is {x:.2f} dollars')
+
+#----------------------------------
+#Exercise 2
+# Insert the correct syntax to add a placeholder for the age parameter.
 age = 36
-txt = f"My name is John, I am {age}"
+txt = f"My name is John, and I am {age}"
 print(txt)
+#txt = f"My name is John, and I am {age}"
 
-price = 59
-txt = f"The price is {price} dollars"
-print(txt)
+#----------------------------------
+#Exercise 3
+# What will be the result of the following code:
+print(f'The price is {2 + 3} dollars')
+# The price is 5 dollars
 
-price = 59
-txt = f"The price is {price:.2f} dollars"
-print(txt)
-
-txt = f"The price is {20 * 59} dollars"
-print(txt)
-
-
-# Escape Characters
-txt = "We are the so-called \"Vikings\" from the north."
+#----------------------------------

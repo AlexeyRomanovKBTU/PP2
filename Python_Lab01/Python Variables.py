@@ -1,120 +1,148 @@
-# Creating Variables
-x = 5
-y = "John"
-print(x)
-print(y)
+###################################
+# Python Variables
+###################################
 
-x = 4       # x is of type int
-x = "Sally" # x is now of type str
-print(x)
+#----------------------------------
+#Exercise 1
+# What is a correct way to declare a Python variable?
+# x = 5
 
-x = str(3)    # x will be '3'
-y = int(3)    # y will be 3
-z = float(3)  # z will be 3.0
-
-x = 5
-y = "John"
-print(type(x))
-print(type(y))
-
+#----------------------------------
+#Exercise 2
+# True or False:
+# You can declare string variables with single or double quotes.
 x = "John"
 # is the same as
 x = 'John'
+# True
 
-a = 4
-A = "Sally"
-#A will not overwrite a
+#----------------------------------
+#Exercise 3
+# True or False:
+# Variable names are not case-sensitive.
+a = 5
+# is the same as
+A = 5
+# False
+
+#----------------------------------
+#Exercise 4
+# Select the correct functions to print the data type of a variable:
+# print(type(myvar))
+
+#----------------------------------
 
 
+###################################
 # Variable Names
-myvar = "John"
-my_var = "John"
-_my_var = "John"
-myVar = "John"
-MYVAR = "John"
-myvar2 = "John"
+###################################
 
-myVariableName = "John"
-MyVariableName = "John"
-my_variable_name = "John"
+#----------------------------------
+#Exercise 1
+# Which is NOT a legal variable name?
+# my-var = 20
 
+#----------------------------------
+#Exercise 2
+# Create a variable named carname and assign the value Volvo to it.
+# carname = "Volvo"
 
+#----------------------------------
+#Exercise 3
+# Create a variable named x and assign the value 50 to it.
+# x = 50
+
+#----------------------------------
+
+###################################
 # Assign Multiple Values
-x, y, z = "Orange", "Banana", "Cherry"
-print(x)
-print(y)
-print(z)
+###################################
 
-x = y = z = "Orange"
-print(x)
-print(y)
-print(z)
+#----------------------------------
+#Exercise 1
+# What is a correct syntax to add the value 'Hello World', to 3 variables in one statement?
+# x = y = z = 'Hello World'
 
-fruits = ["apple", "banana", "cherry"]
-x, y, z = fruits
-print(x)
-print(y)
-print(z)
+#----------------------------------
+#Exercise 2
+# Insert the correct syntax to assign values to multiple variables in one line:
+# x, y, z = "Orange", "Banana", "Cherry"
 
+#----------------------------------
+#Exercise 3
+# Consider the following code:
+fruits = ['apple', 'banana', 'cherry']
+a, b, c = fruits
+print(a)
+#What will be the result of a
+# apple
 
+#----------------------------------
+
+###################################
 # Output Variables
-x = "Python is awesome"
-print(x)
+###################################
 
-x = "Python"
-y = "is"
-z = "awesome"
-print(x, y, z)
+#----------------------------------
+#Exercise 1
+# Consider the following code:
+print('Hello', 'World')
+# What will be the printed result?
+# Hello World
 
-x = "Python "
-y = "is "
-z = "awesome"
-print(x + y + z)
+#----------------------------------
+#Exercise 2
+# Consider the following code:
+a = 'Hello'
+b = 'World'
+print(a + b)
+# What will be the printed result?
+# HelloWorld
 
-x = 5
-y = 10
-print(x + y)
+#----------------------------------
+#Exercise 3
+# Consider the following code:
+a = 4
+b = 5
+print(a + b)
+# What will be the printed result?
+# 9
 
-x = 5
-y = "John"
-print(x, y)
+#----------------------------------
 
-
+###################################
 # Global Variables
-x = "awesome"
+###################################
 
+#----------------------------------
+#Exercise 1
+# Consider the following code:
+x = 'awesome'
 def myfunc():
-  print("Python is " + x)
-
+  x = 'fantastic'
 myfunc()
+print('Python is ' + x)
+# What will be the printed result?
+# Python is awesome
 
-
-x = "awesome"
-
-def myfunc():
-  x = "fantastic"
-  print("Python is " + x)
-
-myfunc()
-
-print("Python is " + x)
-
-
+#----------------------------------
+#Exercise 2
+# Insert the correct keyword to make the variable x belong to the global scope.
 def myfunc():
   global x
   x = "fantastic"
+# global x
 
-myfunc()
-
-print("Python is " + x)
-
-
-x = "awesome"
-
+#----------------------------------
+#Exercise 3
+# Consider the following code:
+x = 'awesome'
 def myfunc():
   global x
-  x = "fantastic"
-
+  x = 'fantastic'
 myfunc()
+print('Python is ' + x)
+# What will be the printed result?
+# Python is fantastic
 
-print("Python is " + x)
+#----------------------------------
